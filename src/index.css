@@ -257,31 +257,3 @@ ul {
 Project CSS
 ===============
 */
-
-.menu {
-  background: transparent;
-  border: transparent;
-  cursor: pointer;
-}
-
-.menu .bars {
-  height: 1.5rem;
-  width: 1.5rem;
-}
-
-.modal-btn-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 90vh;
-}
-
-.modal {
-  width: 30%;
-  padding: 1rem;
-}
-
-.modal-header {
-  display: flex;
-  justify-content: end;
-}

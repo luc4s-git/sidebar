@@ -1,14 +1,13 @@
 import Home from './components/Home';
 import Sidebar from './components/Sidebar';
-import { useGlobalContext } from './context/context';
+import Modal from './components/Modal';
 
 const App = () => {
-  const { isSidebarOpen, isModalOpen } = useGlobalContext();
-
   return (
     <main>
       <Home></Home>
-      {isSidebarOpen && <Sidebar />}
+      <Sidebar></Sidebar>
+      <Modal></Modal>
     </main>
   );
 };

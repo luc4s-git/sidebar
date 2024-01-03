@@ -8,12 +8,20 @@ const AppContext = ({ children }) => {
   const [isSidebarOpen, setIsSideBarOpen] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const modalToggle = () => {
-    setIsModalOpen(!isModalOpen);
+  const openModal = () => {
+    setIsModalOpen(true);
   };
 
-  const sidebarToggle = () => {
-    setIsSideBarOpen(!isSidebarOpen);
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
+
+  const openSidebar = () => {
+    setIsSideBarOpen(true);
+  };
+
+  const closeSidebar = () => {
+    setIsSideBarOpen(false);
   };
 
   return (
@@ -23,8 +31,10 @@ const AppContext = ({ children }) => {
         setIsSideBarOpen,
         isModalOpen,
         setIsModalOpen,
-        modalToggle,
-        sidebarToggle,
+        openModal,
+        closeModal,
+        openSidebar,
+        closeSidebar,
       }}
     >
       {children}
