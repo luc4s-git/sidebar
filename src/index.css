@@ -257,3 +257,14 @@ ul {
 Project CSS
 ===============
 */
+
+.menu {
+  background: transparent;
+  border: transparent;
+  cursor: pointer;
+}
+
+.menu .bars {
+  height: 1.5rem;
+  width: 1.5rem;
+}
