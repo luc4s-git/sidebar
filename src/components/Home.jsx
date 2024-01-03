@@ -1,3 +1,12 @@
+import { useGlobalContext } from '../context/context';
+
 export default function Home() {
-  return <div>Home</div>;
+  const { modalToggle } = useGlobalContext();
+  return (
+    <div>
+      <button className="btn" onClick={modalToggle}>
+        Show Modal
+      </button>
+    </div>
+  );
 }
