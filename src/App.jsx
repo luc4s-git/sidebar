@@ -1,5 +1,4 @@
 import Home from './components/Home';
-import Modal from './components/Modal';
 import Sidebar from './components/Sidebar';
 import { useGlobalContext } from './context/context';
 
@@ -9,7 +8,6 @@ const App = () => {
   return (
     <main>
       <Home></Home>
-      {isModalOpen && <Modal />}
       {isSidebarOpen && <Sidebar />}
     </main>
   );
